@@ -1,1 +1,4 @@
 # odin-recipes
+This is my first project in the TOP foundations course. Since i got a good understanding of the html basics i think it was very straight-forward to do. I kept the website bare-bones as i dont want to get hung up too much on this website and keep learning more. The skills i learned and used are:cloning a repo from github, creating files and directories, moving through directories with my terminal, creating an index.html file, using the html structure, learning which attributes are needed to link sites and images etc.
+I have used skills that have not been covered by the material yet. I have downloaded and used imagemagick to and used the "identify *.jpg" command to get the width and height of the pictures in pixels. 
+I have also copy and pasted a simple CSS style attribute to make the images smaller on the site. CSS hasn't been covered yet.
