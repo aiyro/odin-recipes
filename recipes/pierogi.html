@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pierogi-Recipe</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <h1>Use this Pierogi recipe</h1>
 <img src="../images/Pierogi-Recipe.jpg" alt="Image of pierogis" width="1200" height="1800" style="width: 300px; height: 400px;">
+<button>Download free ram</button>
 <h2>Description</h2>
 <p>A simple recipe for pierogis. Pierogis have been inspired by the chemical element pierogium.</p> 
     <p>Known as the most energy dense element. Similarly Pierogis are energy-packed and thus ideal for bulking.</p>
@@ -41,5 +43,18 @@
 <li>Keep eating</li>
 <li>You are no longer weak and small. Use the butter to squeeze through door frames</li>
 </ol>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var buttons = document.querySelectorAll('button');
+      function adjustFontSize(button) {
+        var fontSize = button.offsetWidth / 10;
+        button.style.fontSize = fontSize + 'px';
+      }
+      buttons.forEach(adjustFontSize);
+      window.addEventListener('resize', function() {
+        buttons.forEach(adjustFontSize);
+      });
+    });
+    </script>
 </body>
 </html>

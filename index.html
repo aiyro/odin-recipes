@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipes</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <h1>Odin Recipes</h1>
     <ul>
-  <li><a href="recipes/pierogi.html">Pierogi recipe</a></li> 
-     <li><a href="recipes/air-pizza.html">Air Pizza</a></li> 
+  <li><button><a href="recipes/pierogi.html">Pierogi recipe</a></button></li> 
+     <li><button><a href="recipes/air-pizza.html">Air Pizza</a></button></li> 
     </ul>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var buttons = document.querySelectorAll('button');
+          function adjustFontSize(button) {
+            var fontSize = button.offsetWidth / 10;
+            button.style.fontSize = fontSize + 'px';
+          }
+          buttons.forEach(adjustFontSize);
+          window.addEventListener('resize', function() {
+            buttons.forEach(adjustFontSize);
+          });
+        });
+        </script>
 </body>
 </html>
+
